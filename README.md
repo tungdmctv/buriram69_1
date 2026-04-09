@@ -63,4 +63,5 @@ http://localhost:8000
 
 ## Repository
 
-GitHub: <https://github.com/tungdmctv/buriram69_1>
+- GitHub: <https://github.com/tungdmctv/buriram69_1>
+- GitHub Pages: <https://tungdmctv.github.io/buriram69_1/>
