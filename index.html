@@ -56,7 +56,7 @@
             </div>
           </div>
 
-          <div class="hero-card" data-aos="zoom-in" data-aos-duration="1400">
+          <div class="hero-card image-zoom-trigger" role="button" tabindex="0" data-aos="zoom-in" data-aos-duration="1400" data-full="assets/images/poster-main.jpg" data-alt="โปสเตอร์ทอดผ้าป่าสร้างหลังคาศูนย์ปฏิบัติธรรม จังหวัดบุรีรัมย์">
             <img src="assets/images/poster-main.jpg" alt="โปสเตอร์ทอดผ้าป่าสร้างหลังคาศูนย์ปฏิบัติธรรม จังหวัดบุรีรัมย์" />
           </div>
         </div>
@@ -131,7 +131,7 @@
               </div>
             </div>
 
-            <div class="donate-visual" data-aos="flip-left">
+            <div class="donate-visual image-zoom-trigger" role="button" tabindex="0" data-aos="flip-left" data-full="assets/images/poster-alt.jpg" data-alt="โปสเตอร์รายละเอียดการร่วมบุญทอดผ้าป่าศูนย์ปฏิบัติธรรมบุรีรัมย์">
               <img src="assets/images/poster-alt.jpg" alt="โปสเตอร์รายละเอียดการร่วมบุญทอดผ้าป่าศูนย์ปฏิบัติธรรมบุรีรัมย์" />
             </div>
           </div>
@@ -143,22 +143,22 @@
             <h2>บรรยากาศศูนย์ปฏิบัติธรรม จังหวัดบุรีรัมย์</h2>
           </div>
           <div class="gallery-grid">
-            <figure class="gallery-item large" data-aos="zoom-in-up">
+            <figure class="gallery-item large image-zoom-trigger" role="button" tabindex="0" data-aos="zoom-in-up" data-full="assets/images/gallery-01.jpg" data-alt="ภาพมุมกว้างของโครงสร้างหลังคาศาลาศูนย์ปฏิบัติธรรมจังหวัดบุรีรัมย์">
               <img src="assets/images/gallery-01.jpg" alt="ภาพมุมกว้างของโครงสร้างหลังคาศาลาศูนย์ปฏิบัติธรรมจังหวัดบุรีรัมย์" />
             </figure>
-            <figure class="gallery-item" data-aos="zoom-in-up" data-aos-delay="80">
+            <figure class="gallery-item image-zoom-trigger" role="button" tabindex="0" data-aos="zoom-in-up" data-aos-delay="80" data-full="assets/images/gallery-02.jpg" data-alt="ภาพด้านหน้าศาลาศูนย์ปฏิบัติธรรมจังหวัดบุรีรัมย์">
               <img src="assets/images/gallery-02.jpg" alt="ภาพด้านหน้าศาลาศูนย์ปฏิบัติธรรมจังหวัดบุรีรัมย์" />
             </figure>
-            <figure class="gallery-item" data-aos="zoom-in-up" data-aos-delay="140">
+            <figure class="gallery-item image-zoom-trigger" role="button" tabindex="0" data-aos="zoom-in-up" data-aos-delay="140" data-full="assets/images/gallery-03.jpg" data-alt="ภาพพื้นที่ภายในศูนย์ปฏิบัติธรรมจังหวัดบุรีรัมย์">
               <img src="assets/images/gallery-03.jpg" alt="ภาพพื้นที่ภายในศูนย์ปฏิบัติธรรมจังหวัดบุรีรัมย์" />
             </figure>
-            <figure class="gallery-item" data-aos="zoom-in-up" data-aos-delay="200">
+            <figure class="gallery-item image-zoom-trigger" role="button" tabindex="0" data-aos="zoom-in-up" data-aos-delay="200" data-full="assets/images/gallery-04.jpg" data-alt="ภาพงานก่อสร้างภายในศาลา">
               <img src="assets/images/gallery-04.jpg" alt="ภาพงานก่อสร้างภายในศาลา" />
             </figure>
-            <figure class="gallery-item" data-aos="zoom-in-up" data-aos-delay="260">
+            <figure class="gallery-item image-zoom-trigger" role="button" tabindex="0" data-aos="zoom-in-up" data-aos-delay="260" data-full="assets/images/gallery-05.jpg" data-alt="ภาพด้านข้างศูนย์ปฏิบัติธรรมจังหวัดบุรีรัมย์ช่วงแสงเย็น">
               <img src="assets/images/gallery-05.jpg" alt="ภาพด้านข้างศูนย์ปฏิบัติธรรมจังหวัดบุรีรัมย์ช่วงแสงเย็น" />
             </figure>
-            <figure class="gallery-item" data-aos="zoom-in-up" data-aos-delay="320">
+            <figure class="gallery-item image-zoom-trigger" role="button" tabindex="0" data-aos="zoom-in-up" data-aos-delay="320" data-full="assets/images/gallery-06.jpg" data-alt="ภาพพื้นที่ด้านในศูนย์ปฏิบัติธรรมพร้อมอาคารโดยรอบ">
               <img src="assets/images/gallery-06.jpg" alt="ภาพพื้นที่ด้านในศูนย์ปฏิบัติธรรมพร้อมอาคารโดยรอบ" />
             </figure>
           </div>
@@ -171,9 +171,63 @@
       </footer>
     </div>
 
+    <div class="image-modal" id="imageModal" aria-hidden="true">
+      <div class="image-modal-backdrop" data-close-modal="true"></div>
+      <div class="image-modal-panel" role="dialog" aria-modal="true" aria-label="ดูภาพขยาย">
+        <div class="image-modal-frame">
+          <img class="image-modal-img" src="" alt="" />
+        </div>
+        <p class="image-modal-caption"></p>
+        <button class="image-modal-close" type="button">ปิดภาพ</button>
+      </div>
+    </div>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init({ once: true, offset: 80, duration: 900 });
+
+      const imageModal = document.getElementById("imageModal");
+      const imageModalImg = imageModal.querySelector(".image-modal-img");
+      const imageModalCaption = imageModal.querySelector(".image-modal-caption");
+      const imageModalClose = imageModal.querySelector(".image-modal-close");
+
+      function openImageModal(el) {
+        imageModalImg.src = el.dataset.full;
+        imageModalImg.alt = el.dataset.alt || "ภาพขยาย";
+        imageModalCaption.textContent = el.dataset.alt || "";
+        imageModal.classList.add("is-open");
+        imageModal.setAttribute("aria-hidden", "false");
+        document.body.classList.add("modal-open");
+      }
+
+      function closeImageModal() {
+        imageModal.classList.remove("is-open");
+        imageModal.setAttribute("aria-hidden", "true");
+        imageModalImg.src = "";
+        imageModalImg.alt = "";
+        document.body.classList.remove("modal-open");
+      }
+
+      document.querySelectorAll(".image-zoom-trigger").forEach((el) => {
+        el.addEventListener("click", () => openImageModal(el));
+        el.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            openImageModal(el);
+          }
+        });
+      });
+
+      imageModalClose.addEventListener("click", closeImageModal);
+      imageModal.addEventListener("click", (event) => {
+        if (event.target.dataset.closeModal === "true") closeImageModal();
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && imageModal.classList.contains("is-open")) {
+          closeImageModal();
+        }
+      });
     </script>
   </body>
 </html>

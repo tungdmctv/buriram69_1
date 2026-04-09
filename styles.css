@@ -17,6 +17,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 body {
   margin: 0;
   font-family: "Noto Sans Thai", sans-serif;
@@ -239,6 +243,19 @@ h2 {
   overflow: hidden;
 }
 
+.image-zoom-trigger {
+  cursor: zoom-in;
+}
+
+.image-zoom-trigger img {
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.image-zoom-trigger:hover img {
+  transform: scale(1.02);
+  filter: saturate(1.04);
+}
+
 .section {
   padding: 24px;
   margin-bottom: 18px;
@@ -303,6 +320,74 @@ h2 {
   overflow: hidden;
 }
 
+.image-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 1200;
+}
+
+.image-modal.is-open {
+  display: block;
+}
+
+.image-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(26, 15, 2, 0.84);
+}
+
+.image-modal-panel {
+  position: relative;
+  z-index: 1;
+  width: min(92vw, 980px);
+  max-height: calc(100vh - 32px);
+  margin: 16px auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.image-modal-frame {
+  width: 100%;
+  max-height: calc(100vh - 140px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-modal-img {
+  max-width: 100%;
+  max-height: calc(100vh - 180px);
+  object-fit: contain;
+  border-radius: 20px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.image-modal-caption {
+  margin: 0;
+  text-align: center;
+  color: #fff4d4;
+  line-height: 1.6;
+}
+
+.image-modal-close {
+  border: 0;
+  border-radius: 999px;
+  padding: 12px 22px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--gold-5);
+  background: linear-gradient(135deg, #fff5d6, #f1c96c);
+  cursor: pointer;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
 .gallery-item.large {
   grid-column: span 2;
   grid-row: span 2;
@@ -365,5 +450,25 @@ h2 {
 
   .btn {
     width: 100%;
+  }
+
+  .image-modal-panel {
+    width: calc(100vw - 20px);
+    max-height: calc(100vh - 20px);
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  .image-modal-frame {
+    max-height: calc(100vh - 130px);
+  }
+
+  .image-modal-img {
+    max-height: calc(100vh - 160px);
+  }
+
+  .image-modal-close {
+    width: 100%;
+    max-width: 320px;
   }
 }
