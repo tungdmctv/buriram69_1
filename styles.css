@@ -244,6 +244,8 @@ h2 {
   border: 0;
   cursor: zoom-in;
   width: 100%;
+  appearance: none;
+  background: transparent;
 }
 
 .image-button img {
@@ -331,6 +333,11 @@ h2 {
 
 .lightbox.is-open {
   display: grid;
+}
+
+.lightbox > * {
+  position: relative;
+  z-index: 1;
 }
 
 .lightbox-image {
