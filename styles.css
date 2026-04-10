@@ -1,15 +1,15 @@
 :root {
-  --bg: #0b1020;
-  --bg-soft: #121931;
-  --panel: rgba(16, 23, 44, 0.72);
-  --panel-strong: rgba(18, 25, 49, 0.92);
-  --border: rgba(154, 122, 255, 0.22);
-  --text: #f5f7ff;
-  --muted: #b6bfd9;
-  --accent: #8f6bff;
-  --accent-2: #c084fc;
-  --gold: #f3c86a;
-  --glow: 0 30px 80px rgba(92, 63, 188, 0.35);
+  --bg: #1b1205;
+  --bg-soft: #2b1b07;
+  --panel: rgba(44, 28, 8, 0.72);
+  --panel-strong: rgba(58, 36, 10, 0.92);
+  --border: rgba(243, 200, 106, 0.2);
+  --text: #fffaf0;
+  --muted: #f3e2bf;
+  --accent: #d8a63c;
+  --accent-2: #f3c86a;
+  --gold: #f7d98a;
+  --glow: 0 30px 80px rgba(120, 74, 13, 0.28);
 }
 
 * {
@@ -29,9 +29,9 @@ body {
   font-family: "Noto Sans Thai", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(143, 107, 255, 0.2), transparent 28%),
-    radial-gradient(circle at top right, rgba(192, 132, 252, 0.16), transparent 22%),
-    linear-gradient(180deg, #070b16 0%, #0b1020 40%, #111936 100%);
+    radial-gradient(circle at top left, rgba(243, 200, 106, 0.18), transparent 28%),
+    radial-gradient(circle at top right, rgba(255, 235, 180, 0.12), transparent 22%),
+    linear-gradient(180deg, #120b03 0%, #1b1205 42%, #2a1a07 100%);
 }
 
 img {
@@ -63,13 +63,13 @@ img {
 .hero::before {
   top: -120px;
   left: -100px;
-  background: radial-gradient(circle, rgba(143, 107, 255, 0.28), rgba(143, 107, 255, 0));
+  background: radial-gradient(circle, rgba(243, 200, 106, 0.26), rgba(243, 200, 106, 0));
 }
 
 .hero::after {
   right: -140px;
   top: 120px;
-  background: radial-gradient(circle, rgba(243, 200, 106, 0.14), rgba(243, 200, 106, 0));
+  background: radial-gradient(circle, rgba(255, 240, 204, 0.12), rgba(255, 240, 204, 0));
 }
 
 .topbar,
@@ -88,9 +88,9 @@ img {
   margin-bottom: 36px;
   padding: 16px 22px;
   border-radius: 24px;
-  background: rgba(10, 14, 28, 0.68);
+  background: rgba(31, 19, 5, 0.72);
   backdrop-filter: blur(18px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(243, 200, 106, 0.14);
   box-shadow: var(--glow);
 }
 
@@ -124,7 +124,7 @@ img {
 }
 
 .nav-link:hover {
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(243, 200, 106, 0.12);
   color: white;
   transform: translateY(-1px);
 }
@@ -198,8 +198,8 @@ h2 {
 .hero-meta div {
   padding: 18px 20px;
   border-radius: 22px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 245, 220, 0.05);
+  border: 1px solid rgba(243, 200, 106, 0.12);
 }
 
 .hero-meta span {
@@ -236,14 +236,14 @@ h2 {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  background: linear-gradient(135deg, #b7791f, #f3c86a);
   color: white;
 }
 
 .btn-secondary {
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 244, 220, 0.04);
   color: white;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(243, 200, 106, 0.16);
 }
 
 .hero-card {
@@ -302,7 +302,7 @@ h2 {
   margin-bottom: 10px;
   padding: 8px 14px;
   border-radius: 999px;
-  background: linear-gradient(135deg, var(--accent-2), var(--accent));
+  background: linear-gradient(135deg, #f3c86a, #b7791f);
   color: white;
   font-weight: 800;
 }
@@ -361,7 +361,7 @@ h2 {
 .image-modal-backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(4, 6, 12, 0.84);
+  background: rgba(15, 10, 3, 0.86);
   backdrop-filter: blur(6px);
 }
 
@@ -370,8 +370,8 @@ h2 {
   width: min(92vw, 980px);
   padding: 20px;
   border-radius: 28px;
-  background: rgba(10, 14, 28, 0.92);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(33, 21, 6, 0.94);
+  border: 1px solid rgba(243, 200, 106, 0.14);
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
 }
 
@@ -389,7 +389,7 @@ h2 {
 .image-modal-close {
   margin-top: 14px;
   border: none;
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  background: linear-gradient(135deg, #b7791f, #f3c86a);
   color: white;
   padding: 12px 18px;
   border-radius: 999px;
